@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="AddToFirst"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="delete"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/delete_et"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="update"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/update_et"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:text="0" />
+
+        <EditText
+            android:id="@+id/update_content_et"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:text="abc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="from" />
+
+        <EditText
+            android:id="@+id/from_et"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="to" />
+
+        <EditText
+            android:id="@+id/to_et"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/move_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="move"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/session_rv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/darker_gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp" />
+
+</LinearLayout>
